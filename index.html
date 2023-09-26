@@ -1,152 +1,288 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-<title>
-			每天开心
-		</title>
-		<style>
-		@font-face {
 
-		 font-family: "MyFont";
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>欢迎来到我的个人主页</title>
+    <meta name="keywords" content="kaygb,风也温柔,个人主页,程序员">
+
+<style>
+@font-face {
+      font-family: "MyFont";
    src: url("https://cdn3.codesign.qq.com/screens/2023/09/14/xDP3923q4EY409jwlKp14/nhyawbve23fq764v/7fd2e13c-8889-4df9-8e16-940b065f4d1a.png") format("woff2"),
            url("https://cdn3.codesign.qq.com/screens/2023/09/14/xDP3923q4EY409jwlKp14/nhyawbve23fq764v/e46ef2a7-10b7-4146-aee6-c3896d9c4175.png") format("woff");
     }
-			* {  font-style:normal; font-family: "MyFont"; margin: 0; padding: 0; border: 0; font-size: 100%; 
-			vertical-align: baseline; box-sizing: border-box; color: inherit; } body
-			{ background-image: linear-gradient(120deg, #98969b 0%, #000000 100%);
-			height: 100vh; } h1 { font-size: 45vw; text-align: center; position: fixed;
-			width: 100vw; z-index: 1; color: #ffffff26; text-shadow: 0 0 50px rgba(0,
-			0, 0, 0.07); top: 50%; -webkit-transform: translateY(-50%); transform:
-			translateY(-50%); font-family: "Montserrat", monospace; } div { background:
-			rgba(0, 0, 0, 0); width: 70vw; position: relative; top: 50%; -webkit-transform:
-			translateY(-50%); transform: translateY(-50%); margin: 0 auto; padding:
-			30px 30px 10px; box-shadow: 0 0 150px -20px rgba(0, 0, 0, 0.5); z-index:
-			3; } P { color: #f5f5f5; margin:
-			0 0 20px; font-size: 17px; line-height: 1.2; } span { color: #f0c674; }
-			i { color: #8abeb7; } div a { text-decoration: none; } b { color: #81a2be;
-			} a.avatar { position: fixed; bottom: 15px; right: -100px; -webkit-animation:
-			slide 0.5s 4.5s forwards; animation: slide 0.5s 4.5s forwards; display:
-			block; z-index: 4 } a.avatar img { border-radius: 100%; width: 44px; border:
-			2px solid white; } @-webkit-keyframes slide { from { right: -100px; -webkit-transform:
-			rotate(360deg); transform: rotate(360deg); opacity: 0; } to { right: 15px;
-			-webkit-transform: rotate(0deg); transform: rotate(0deg); opacity: 1; }
-			} @keyframes slide { from { right: -100px; -webkit-transform: rotate(360deg);
-			transform: rotate(360deg); opacity: 0; } to { right: 15px; -webkit-transform:
-			rotate(0deg); transform: rotate(0deg); opacity: 1; } }
-		</style>
-	</head>
-	<body>
-		<h1>
-		</h1>
-		<div>
-			<p>
-				>
-				<span>
-					[root@VM-0-7-centos ~]#
-				</span>
-				: "
-				<i>
-					rm -rf /*
-				</i>
-				"
-				<p>
-					>
-					<span>
-						[root@VM-0-7-centos ~]#
-					</span>
-					: "
-					<i>
-						禁止删除 主站已崩溃 准备启用临时线路...
-					</i>
-					"
-					<p>
-						>
-						<span>
-							[root@VM-0-7-centos ~]#
-						</span>
-						: "
-						<i>
-							临时线路启用中...
-						</i>
-						"
-						<p>
-							>
-							<span>
-								[root@VM-0-7-centos ~]#
-							</span>
-							 : "
-							<i >
-								启用成功! 等待3s全部加载完成即可进入临时线路...
-							</i>
-							"
-							<p>
-								>
-								<span>
-									[root@VM-0-7-centos ~]#
-								</span>
-								: "
-								<i>
-								主站正在加载...
-								</i>
-								"
-								<p>
-									>
-									<span>
-										[root@VM-0-7-centos ~]#
-									</span>
-									: "
-									<i>
-										加载成功 主站可能需要一天的时间来重新建设 请进入临时线路...
-									</i>
-									"
-									<p>
-										>
-										<span>
-											[root@VM-0-7-centos ~]#
-										</span>
-										: "
-										<i>
-											不要伤心 不要难过...
-										</i>
-										"
-										<p>
-											>
-											<span>
-												[root@VM-0-7-centos ~]#
-											</span>
-											: "
-											<i >
-												或许我们一天后会再见 ...
-											</i>
-											"
-											<p>
-											
-													>
-													<span>
-														[root@VM-0-7-centos ~]#
-													</span>
-													: "
-													<i>
-														2023-9-25 23:00 - 网页正在建设中 一天后再见 <span style='color:red;'><a target="_blank" href="https://docs.qq.com/doc/DZlBNU3FHTExiQWdt">点我进入临时线路...</a></span>
-													</i>
-													"
-		</div>
-		<script>
-			        var str = document.getElementsByTagName('div')[0].innerHTML.toString();
-        var i = 0;
-        document.getElementsByTagName('div')[0].innerHTML = "";
-        setTimeout(function() {
-            var se = setInterval(function() {
-                i++;
-                document.getElementsByTagName('div')[0].innerHTML = str.slice(0, i) + "|";
-                if (i == str.length) {
-                    clearInterval(se);
-                    document.getElementsByTagName('div')[0].innerHTML = str;
-                }
-            }, 0.5);
-        }, 0);
-		</script>
-	</body>
+    body {
+        font-family: "MyFont";
+    font-size: 18px;
+    color: #6c767d;
+    background-color: #ebf1f5;
+    background-image: url(https://cn01.img.twinkle222.cn/imgs/2020/03/f735a00354a3c282.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    min-height: 800px;
+}
+
+
+
+
+::-webkit-scrollbar {
+    width: 5px;
+    /* height: 5px; */
+    background-color: #F5F5F5;
+}
+
+
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+
+
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #555;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: .5em;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 20px;
+    margin-top: 1em;
+}
+
+h4 {
+    font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: black;
+}
+
+.card {
+    border: none;
+    padding: 80px 80px 0px;
+    border-radius: 0;
+}
+
+.container {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.my-card {
+    /* box-shadow: 0px 5px 15px 5px rgb(203, 221, 232); */
+}
+
+strike {
+    color: red;
+}
+
+.btn {
+    border-radius: 0;
+    margin: 5px 0;
+    width: 100%;
+    padding: 12px 40px;
+    transition: ease;
+}
+
+.btn-primary {
+    /* box-shadow: 0px 5px 15px 5px rgb(203, 221, 232); */
+    padding: 12px 40px;
+    transition: ease;
+}
+
+.btn-primary:hover {
+    box-shadow: 5px -2px 15px 0px rgb(203, 221, 232);
+}
+
+.btn-secondary {
+    /* box-shadow: 0px 5px 15px 5px rgb(203, 221, 232); */
+    padding: 12px 40px;
+    transition: ease;
+}
+
+.btn-secondary:hover {
+    box-shadow: 5px -2px 15px 0px rgb(203, 221, 232);
+}
+
+.btn-success {
+    /* box-shadow: 0px 5px 15px 5px rgb(203, 221, 232); */
+    padding: 12px 40px;
+    transition: ease;
+}
+
+.btn-success:hover {
+    box-shadow: 5px -2px 15px 0px rgb(203, 221, 232);
+}
+
+.social {
+    padding-left: 0;
+}
+
+.social p {
+    margin-bottom: 0;
+}
+
+.social li {
+    list-style: none;
+    float: left;
+    margin-right: 15px;
+}
+
+.card-text {
+    margin-bottom: 20px;
+}
+
+.social .fa {
+    font-size: 24px;
+}
+
+.photo-bg {
+    /* background-image: url(assets/background.jpg); */
+    background-image: url(https://tva1.sinaimg.cn/large/0072Vf1pgy1foxk456b0fj31hc0u0dxu.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer p {
+    font-size: 12px;
+}
+
+#kaygb-blog-a,
+#kaygb-mail-a {
+    display: none;
+}
+
+@media (max-width: 1199px) {
+    body {
+        min-height: 600px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    h2,
+    .social .fa {
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 16px;
+    }
+    h4,
+    p {
+        font-size: 14px;
+    }
+    .card {
+        padding: 50px 50px 0px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .photo-bg {
+        min-height: calc(100vh - 500px);
+    }
+}
+
+@media(max-width:991px) {
+    .photo-bg {
+        background-position: top;
+        min-height: calc(90vh - 440px);
+    }
+}
+
+@media(max-width: 767px) {
+    .container {
+        position: relative;
+        top: 0;
+        transform: translateY(0);
+    }
+    .photo-bg {
+        height: 180px;
+    }
+    .card {
+        padding: 20px;
+    }
+    #kaygb-blog-a,
+    #kaygb-mail-a {
+        display: block;
+    }
+    #kaygb-blog,
+    #kaygb-mail {
+        display: none;
+    }
+}
+
+#frame {
+    width: 50%;
+    height: 50vh;
+    margin: 0;
+    background: #fff;
+    position: fixed;
+    z-index: 999;
+    top: 5%;
+    left: 5%;
+}
+
+#aplayer {
+    z-index: 20000000;
+}
+</style>
+</head>
+
+<body>
+    <div id="main" class="container">
+        <div class="row my-card justify-content-center">
+            <div class="col-lg-4 photo-bg"></div>
+            <div class="col-lg-8 card">
+                <h1>Hi，朋友！</h1>
+                <p>很荣幸您能访问我的网站！ 目前我仍在学习中，每天抽出时间来看书学习，励志成为一个技术很牛的程序员。
+                </p>
+                <p>
+                    我很喜欢的一句话：<br>If the moon smiled, she would resemble you.<br> 如果月亮会笑，那么她一定像你一样美！
+
+                </p>
+
+                <p>Catch me:</p>
+                <div class="row">
+               
+                </div>
+
+
+                <h4 class="mt-4">or, keep your eyes on</h4>
+                <ul class="social mt-1">
+                    
+                </ul>
+                <footer>
+                    <p>>风也温柔</a> <a href="http://beian.miit.gov.cn" tppabs="http://beian.miit.gov.cn/" target="_blank">正在备案中...</a>
+                    
+                    </p>
+                    </p>
+
+                </footer>
+            </div>
+        </div>
+
+    </div>
+    <!-- aplayer -->
 
 </html>
